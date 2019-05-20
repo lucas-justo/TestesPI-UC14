@@ -44,8 +44,8 @@
 			WebElement confirmaSenha = pagina.findElementByName("txtSenhaConfirma");
 			confirmaSenha.sendKeys("1219978Po");
 			
-			WebElement btnSalvar = pagina.findElementByXPath("/html/body/div[2]/form/div[11]/input[1]");
-				btnSalvar.click();
+			WebElement submit = pagina.findElementByName("submit");
+			submit.click();
 			
 			WebElement tabela = pagina.findElementByXPath("/html/body/div[2]/table");
 			if(tabela.getText().contains("TesteCadastroCliente")) {
