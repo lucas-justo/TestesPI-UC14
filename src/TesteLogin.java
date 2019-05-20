@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TesteLogin {
 	private static final String KEY = "webdriver.gecko.driver";
-	private static final String VALUE = "C:\\Users\\181710134\\Desktop\\Automatizados\\eclipse\\geckodriver.exe";
+	private static final String VALUE = "T:\\DIOGOD\\geckodriver.exe";
 	
 	FirefoxDriver pagina;
 	
