@@ -1,12 +1,9 @@
-	import java.util.List;
-
 	import javax.swing.JOptionPane;
 
 	import org.junit.Before;
 	import org.junit.Test;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.firefox.FirefoxDriver;
-	import org.openqa.selenium.support.ui.Select;
 
 	public class TestePagContato{
 		
