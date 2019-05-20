@@ -1,5 +1,3 @@
-	import javax.swing.JOptionPane;
-
 	import org.junit.Before;
 	import org.junit.Test;
 	import org.openqa.selenium.WebElement;
@@ -38,19 +36,9 @@
 			WebElement mensagem = pagina.findElementByName("vSCONMENSAGEM");
 			mensagem.sendKeys("É us guri pae");
 			
-			WebElement senha = pagina.findElementByXPath("/html/body/div[2]/form/div[8]/input");
-			senha.sendKeys("1219978Po");
+			WebElement enviarMensagem = pagina.findElementByName("submit");
+			enviarMensagem.click();
 			
-			WebElement confirmaSenha = pagina.findElementByName("txtSenhaConfirma");
-			confirmaSenha.sendKeys("1219978Po");
-			
-			WebElement submit = pagina.findElementByName("submit");
-			submit.click();
-			
-			WebElement tabela = pagina.findElementByXPath("/html/body/div[2]/table");
-			if(tabela.getText().contains("TesteCadastroCliente")) {
-				JOptionPane.showMessageDialog(null, "Teste realizado com sucesso meu mano!");
-			}
 		}
 
 	}
